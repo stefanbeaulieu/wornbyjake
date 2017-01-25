@@ -9,7 +9,7 @@ CREATE TABLE user {
     password varchar(100) NOT NULL,
     company_name varchar(100),
     logo LONGBLOB,
-    phone_number int(10) NOT NULL,
+    phone_number bigint NOT NULL,
     profile_desc varchar(255),
     PRIMARY KEY (id)
 },
