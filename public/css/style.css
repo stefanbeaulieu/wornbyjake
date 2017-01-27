@@ -92,3 +92,128 @@ a:hover {
 /************************************
 BODY SECTION
 ************************************/
+
+body{
+	background-color: #f9f9f9;
+}
+
+footer {
+	background-color: #303538;
+	min-height: 100px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	padding: 15px;
+	color: #ffffff;
+	margin-top: 20px;
+}
+
+.footer-links {
+	color: #d69b5e;
+}
+
+.card {
+	
+	background: #ffffff;
+	margin-top: 20px;
+	box-shadow: 3px 3px 15px #aaaaaa;
+	text-align: center;
+	
+}
+
+.popular-cat {
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	padding: 10px;
+}
+
+.welcome-center {
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+	font-size: 72px;
+	color: #d69b5e;
+	padding-top: 10px;
+}
+
+.sign-in-center {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 25px;
+
+}
+
+.button1 {
+	padding: 15px;
+	margin-bottom: 25px;
+	border: 1px solid #d69b5e;
+	background-color: #ffffff;
+	color: #d69b5e;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+.sign-in-button {
+	color: #d69b5e;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+.card-bottom {
+	background-color: #303538;
+	height: 50px;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.left1 {
+	float: left;
+}
+
+.new-wbj {
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.left2 {
+	float: right;
+
+}
+
+.start-here {
+	color: #d69b5e;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.cat1 {
+	box-shadow: 6px 6px 2px #259b81;
+}
+
+.right1 {
+	float: left;
+}
+
+.shop-all {
+	font-family: 'Open Sans', sans-serif;
+	color: #259b81;
+}
+
+.cat2 {
+	box-shadow: 6px 6px 2px #259b81;
+}
+
+.cat3 {
+	box-shadow: 6px 6px 2px #e78897;
+}
+
+.cat4 {
+	box-shadow: 6px 6px 2px #e78897;
+}
+
+.cat5 {
+	box-shadow: 6px 6px 2px #d69b5e;
+}
+
+.cat6 {
+	box-shadow: 6px 6px 2px #d69b5e;
+}
