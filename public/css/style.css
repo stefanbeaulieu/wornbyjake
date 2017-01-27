@@ -1,8 +1,94 @@
+/************************************
+HEADER SECTION
+************************************/
+
 .navbar {
-	background-color: #303538;
-	min-height: 75px;
+    background-color: #303538;
+    min-height: 60px;
+}
+
+.navbar-form .input-group>.form-control {
+    width: 250px;
+    margin-top: 4px;
+}
+
+.logo {
+    float: left;
+    padding-top: 27px;
 }
 
 .navbar-form {
-	background-color: transparent;
+    background-color: transparent;
+    padding: 22px 0px 0px 200px;
+    display: inline-block;
 }
+
+.form-control {
+    background-color: transparent;
+    color: #fff;
+    font-size: 8pt;
+    padding: 8.5px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.btn-search {
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+    border-left: 0px;
+}
+
+.dropdown-toggle {
+    border-radius: 0;
+    background-color: #fff;
+    color: darkslategray;
+    font-size: 8pt;
+    padding: 8.5px;
+}
+
+.header-text {
+    display: inline-block;
+    padding: 0px 0px 0px 90px;
+}
+
+ul {
+    font-size: .8em;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/************************************
+LINKS
+************************************/
+
+li {
+    display: inline;
+    width: 100px;
+    padding: 0 10px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+/************************************
+BODY SECTION
+************************************/
