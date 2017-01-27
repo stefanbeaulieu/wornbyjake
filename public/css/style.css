@@ -9,6 +9,7 @@ HEADER SECTION
 
 .navbar-form .input-group>.form-control {
     width: 250px;
+    margin-top: 4px;
 }
 
 .logo {
@@ -28,6 +29,7 @@ HEADER SECTION
     font-size: 8pt;
     padding: 8.5px;
     border-right: 0px;
+    border-left: 0px;
 }
 
 .btn-search {
@@ -43,6 +45,47 @@ HEADER SECTION
     color: darkslategray;
     font-size: 8pt;
     padding: 8.5px;
+}
+
+.header-text {
+    display: inline-block;
+    padding: 0px 0px 0px 90px;
+}
+
+ul {
+    font-size: .8em;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/************************************
+LINKS
+************************************/
+
+li {
+    display: inline;
+    width: 100px;
+    padding: 0 10px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
 }
 
 
