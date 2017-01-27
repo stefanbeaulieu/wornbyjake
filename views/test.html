@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>WornByJake | The online marketplace for clothes, apparel and gear for all</title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="../style.css" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Meta Information-->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Title Information-->
+    <title>WornByJake | The online marketplace for clothes, apparel and gear for all</title>
+
+    <!--Bootstrap Styles-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--Our Styles-->
+    <link rel="stylesheet" href="../public/css/style.css" type="text/css" />
+
 </head>
+
 <body>
-	<header>
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand">
-						<img src="./images/Wornbyjake_Logo_White-webmain.png" class="wbj-logo" alt="WornByJake Logo">
-					</a>
-						
-				</div>
-				
-				<form class="navbar-form text-center navbar-search" role="search">
-                <div class="input-group">
-                
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-search btn-default dropdown-toggle" data-toggle="dropdown">
+    <header>
+        <!--spanning gray color bar across top-->
+        <nav class="navbar navbar-default">
+            <!--making buffer to hold "container"-->
+            <div class="container">
+                <!--holding only the logo-->
+                <div class="navbar">
+                    <img src="../public/images/Wornbyjake_Logo_White-webmain.png" class="logo" alt="WornByJake Logo" />
+
+                    <form class="navbar-form text-center navbar-search" role="search">
+                        <div class="input-group">
+
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-search btn-default dropdown-toggle" data-toggle="dropdown">
                          
-                            <span class="label-icon">ALL    </span>
+                            <span class="label-icon">ALL</span>
                             <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu pull-left" role="menu"> 
-                           <li>
-                                <a href="#">
-                                    <span class="glyphicon glyphicon-user"></span>
-                                    <span class="label-icon">Search By User</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                <span class="glyphicon glyphicon-book"></span>
-                                <span class="label-icon">Search By Organization</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <input type="text" class="form-control">
-                
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-search btn-default">
+                                </button>
+                                <ul class="dropdown-menu pull-left" role="menu">
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-user"></span>
+                                            <span class="label-icon">Search By User</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-book"></span>
+                                            <span class="label-icon">Search By Organization</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <input type="text" class="form-control" placeholder="Search for...">
+
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-search btn-default">
                            <span class="glyphicon glyphicon-search"></span>
                         </button>
-                         
-                         
-                    </div>
-                </div>  
-            </form>   
-			</div>
-	</header>
-	
+
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+    </header>
+
 </body>
+
 </html>

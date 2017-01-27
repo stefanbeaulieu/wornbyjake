@@ -1,8 +1,51 @@
+/************************************
+HEADER SECTION
+************************************/
+
 .navbar {
-	background-color: #303538;
-	min-height: 75px;
+    background-color: #303538;
+    min-height: 60px;
+}
+
+.navbar-form .input-group>.form-control {
+    width: 250px;
+}
+
+.logo {
+    float: left;
+    padding-top: 27px;
 }
 
 .navbar-form {
-	background-color: transparent;
+    background-color: transparent;
+    padding: 22px 0px 0px 200px;
+    display: inline-block;
 }
+
+.form-control {
+    background-color: transparent;
+    color: #fff;
+    font-size: 8pt;
+    padding: 8.5px;
+    border-right: 0px;
+}
+
+.btn-search {
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+    border-left: 0px;
+}
+
+.dropdown-toggle {
+    border-radius: 0;
+    background-color: #fff;
+    color: darkslategray;
+    font-size: 8pt;
+    padding: 8.5px;
+}
+
+
+/************************************
+BODY SECTION
+************************************/
