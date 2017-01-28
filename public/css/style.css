@@ -93,12 +93,12 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #fff;
+    color: #7ebbff;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #fff;
+    color: #7ebbff;
 }
 
 
@@ -117,7 +117,7 @@ footer {
 	text-align: center;
 	padding: 15px;
 	color: #ffffff;
-	margin-top: 20px;
+	
 }
 
 .footer-links {
@@ -130,7 +130,7 @@ footer {
 	margin-top: 20px;
 	box-shadow: 3px 3px 15px #aaaaaa;
 	text-align: center;
-	
+
 }
 
 .popular-cat {
@@ -198,10 +198,6 @@ footer {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.cat1 {
-	box-shadow: 6px 6px 2px #259b81;
-}
-
 .right1 {
 	float: left;
 }
@@ -211,26 +207,218 @@ footer {
 	color: #259b81;
 }
 
+.cat-text-men1 {
+	color: #259b81;
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	font-size: 18px;
+	padding-top: 15px;
+}
+
+.cat-text-men {
+	color: #259b81;
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	font-size: 18px;
+	padding-top: 15px;
+	
+}
+
+.cat-text-men1 {
+	color: #259b81;
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	font-size: 18px;
+	padding-top: 15px;
+	margin-left: -45px;
+	
+}
+
+.cat-text-women {
+	color: #e78897;
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	font-size: 18px;
+	padding-top: 15px;
+}
+
+.cat-text-women1 {
+	color: #e78897;
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	font-size: 18px;
+	padding-top: 15px;
+	margin-left: -45px;
+}
+
+.cat-text-child {
+	color: #d69b5e;
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	font-size: 18px;
+	padding-top: 15px;
+}
+
+.cat-text-child1 {
+	color: #d69b5e;
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	font-size: 18px;
+	padding-top: 15px;
+	margin-left: -45px;
+}
+
+.cat1 {
+	box-shadow: 6px 6px 2px #259b81;
+	float: right;
+	margin-bottom: 15px;
+}
+
 .cat2 {
 	box-shadow: 6px 6px 2px #259b81;
+	float: left;
+	margin-bottom: 15px;
 }
 
 .cat3 {
 	box-shadow: 6px 6px 2px #e78897;
+	float: right;
+	margin-bottom: 15px;
 }
 
 .cat4 {
 	box-shadow: 6px 6px 2px #e78897;
+	float: left;
+	margin-bottom: 15px;
 }
 
 .cat5 {
 	box-shadow: 6px 6px 2px #d69b5e;
+	float: right;
+	margin-bottom: 15px;
 }
 
 .cat6 {
 	box-shadow: 6px 6px 2px #d69b5e;
+	float: left;
+	margin-bottom: 15px;
 }
 
 #myCarousel {
 	width: 100%;
+}
+
+.menswear {
+	width: 100%;
+}
+
+.menswear-row {
+	padding-top: 15px;
+}
+
+.menswear-home-text {
+	color: #259b81;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 24px;
+	padding-top: 15px;
+}
+
+.man1 {
+	width: 30%;
+	padding-left: 20px;
+}
+
+.button2 {
+	padding: 15px;
+	margin-top: 35px;
+	border: 1px solid #d69b5e;
+	background-color: #ffffff;
+	color: #d69b5e;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+.view-all-men {
+	color: #d69b5e;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.womenswear {
+	width: 100%;
+}
+
+.womenwear-row {
+	padding-top: 0px;
+	float: right;
+}
+
+.womenwear-home-text {
+	color: #e78897;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 24px;
+	padding-top: 15px;
+}
+
+.women1 {
+	width: 30%;
+	padding-left: 20px;
+}
+
+.button3 {
+	padding: 15px;
+	margin-top: 35px;
+	border: 1px solid #e78897;
+	background-color: #ffffff;
+	color: #e78897;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+.view-all-women {
+	color: #e78897;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.childwear {
+	width: 100%;
+}
+
+.childwear-row {
+	padding-top: 0px;
+}
+
+.childwear-home-text {
+	color: #d69b5e;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 24px;
+	padding-top: 15px;
+}
+
+.child1 {
+	width: 30%;
+	padding-left: 20px;
+}
+
+.button4 {
+	padding: 15px;
+	margin-top: 35px;
+	border: 1px solid #d69b5e;
+	background-color: #ffffff;
+	color: #d69b5e;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+.view-all-child {
+	color: #d69b5e;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	padding-top: 15px;
 }

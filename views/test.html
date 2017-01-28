@@ -105,17 +105,15 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="http://lorempixel.com/1800/600/" alt="Chania">
+      <img src="../public/images/slider1.jpeg" alt="Chania">
     </div>
     <div class="item">
-      <img src="http://lorempixel.com/1800/600/" alt="Chania">
+      <img src="../public/images/slider2.jpg" alt="Chania">
     </div>
     <div class="item">
-      <img src="http://lorempixel.com/1800/600/" alt="Flower">
+      <img src="../public/images/slider3.jpg" alt="Flower">
     </div>
-    <div class="item">
-      <img src="http://lorempixel.com/1800/600/" alt="Flower">
-    </div>
+    
   </div>
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -154,33 +152,45 @@
       <div class="card-block">
         <h3 class="card-title popular-cat">POPULAR CATEGORIES</h3>
         <div class="row">
-            <div class="col-sm-6">
-                <img src="../public/images/shoes.png" alt="Men's Shoes" class="cat1">
-                <p>Men's Shoes</p>
+            <div class="col-sm-3">
+                <img src="../public/images/shoes.png" alt="Men's Shoes" class="cat1" href="#">
             </div>
-            <div class="col-sm-6">
-                <img src="../public/images/shoes.png" alt="Men's Shoes" class="cat2">
-                <span>Men's Shoes</span>
+            <div class="col-sm-3">  
+                <a href="#"><p class="cat-text-men">Men Tops</p></a>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <img src="../public/images/shoes.png" alt="Men's Shoes" class="cat3">
-                <p>Men's Shoes</p>
+            <div class="col-sm-3">
+                <img src="../public/images/shoes.png" alt="Men's Shoes" class="cat2" href="#">
             </div>
-            <div class="col-sm-6">
-                <img src="../public/images/shoes.png" alt="Men's Shoes" class="cat4">
-                <span>Men's Shoes</span>
+            <div class="col-sm-3">
+                <a href="#"><p class="cat-text-men1">Men Bottoms</p></a>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6">
-                <img src="../public/images/shoes.png" alt="Men's Shoes" class="cat5">
-                <p>Men's Shoes</p>
+            <div class="col-sm-3">
+                <img src="../public/images/womenwear.png" alt="Men's Shoes" class="cat3" href="#">
             </div>
-            <div class="col-sm-6">
-                <img src="../public/images/shoes.png" alt="Men's Shoes" class="cat6">
-                <span>Men's Shoes</span>
+            <div class="col-sm-3">
+                <a href="#"><p class="cat-text-women">Women Tops</p></a>
+            </div>
+            <div class="col-sm-3">
+                <img src="../public/images/womenwear.png" alt="Men's Shoes" class="cat4" href="#">
+            </div>
+            <div class="col-sm-3">
+                <a href="#"><p class="cat-text-women1">Women Bottoms</p></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="../public/images/childrenwear.png" alt="Men's Shoes" class="cat5" href="#">
+            </div>
+            <div class="col-sm-3">
+                <a href="#"><p class="cat-text-child">Kid Tops</p></a>
+            </div>
+            <div class="col-sm-3">
+                <img src="../public/images/childrenwear.png" alt="Men's Shoes" class="cat6" href="#">
+            </div>
+            <div class="col-sm-3">
+                <a href="#"><p class="cat-text-child1">Kid Bottoms</p></a>
             </div>
         </div>
       </div>
@@ -194,14 +204,83 @@
   <div class="col-sm-2"></div>
   </div>
 </div>
-
-<div class="row">
+<!-- Mens Wear -->
+<div class="row menswear-row">
     <div class="col-sm-6">
-        <img src="" alt="">
+        <img src="../public/images/man.png" alt="Men's Wear" class="menswear">
     </div>
 
     <div class="col-sm-6">
-        
+        <div class="row">
+            <div class="menswear-home-text">
+                MENSWEAR
+            </div>
+        </div>
+        <div class="row">
+            <img src="../public/images/man1.png" alt="Man1" class="man1">
+            <img src="../public/images/man2.png" alt="Man2" class="man1">
+            <img src="../public/images/man1.png" alt="Man3" class="man1">
+        </div>
+        <div class="row">
+        <div class="col-sm-5"></div>
+        <div class="col-sm-2">
+            <button class="button2"><a href="#" class="view-all-men">View All</a></button>
+        </div>
+        <div class="col-sm-5"></div>
+        </div>
+    </div>
+</div>
+<!-- Womens Wear -->
+<div class="row womenwear-row">
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="womenwear-home-text">
+                WOMEN'S WEAR
+            </div>
+        </div>
+        <div class="row">
+            <img src="../public/images/women1.png" alt="women1" class="women1">
+            <img src="../public/images/women2.png" alt="women2" class="women1">
+            <img src="../public/images/women1.png" alt="women3" class="women1">
+        </div>
+        <div class="row">
+        <div class="col-sm-5"></div>
+        <div class="col-sm-2">
+            <button class="button3"><a href="#" class="view-all-women">View All</a></button>
+        </div>
+        <div class="col-sm-5"></div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <img src="../public/images/women.png" alt="Men's Wear" class="womenswear">
+    </div>
+
+</div>
+<!-- Children Wear-->
+<!-- Mens Wear -->
+<div class="row childwear-row">
+    <div class="col-sm-6">
+        <img src="../public/images/child.png" alt="child's Wear" class="childwear">
+    </div>
+
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="childwear-home-text">
+                CHILDREN'S WEAR
+            </div>
+        </div>
+        <div class="row">
+            <img src="../public/images/child1.png" alt="child1" class="child1">
+            <img src="../public/images/child2.png" alt="child2" class="child1">
+            <img src="../public/images/child1.png" alt="child3" class="child1">
+        </div>
+        <div class="row">
+        <div class="col-sm-5"></div>
+        <div class="col-sm-2">
+            <button class="button4"><a href="#" class="view-all-child">View All</a></button>
+        </div>
+        <div class="col-sm-5"></div>
+        </div>
     </div>
 </div>
 
