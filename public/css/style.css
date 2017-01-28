@@ -5,6 +5,19 @@ HEADER SECTION
 .navbar {
     background-color: #303538;
     min-height: 60px;
+    margin-bottom: 0px;
+    width: 100%
+    border: none;
+    border-radius: 0 !important;
+  	-moz-border-radius: 0 !important;
+}
+
+.navbar-default {
+	width: 100%;
+	margin: 0px;
+	border: none;
+	border-radius: 0 !important;
+  	-moz-border-radius: 0 !important;
 }
 
 .navbar-form .input-group>.form-control {
@@ -216,4 +229,8 @@ footer {
 
 .cat6 {
 	box-shadow: 6px 6px 2px #d69b5e;
+}
+
+#myCarousel {
+	width: 100%;
 }
