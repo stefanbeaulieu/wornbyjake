@@ -3,27 +3,27 @@ module.exports = function(sequelize, DataTypes) {
     // Giving the Author model a name of type STRING
 
 prod_name: {
-    type: Sequelize.STRING,
+    type: DataTypes.STRING,
     validate: {
     allowNull: false
     },
 },
 prod_desc: {
-    type: Sequelize.STRING,
+    type: DataTypes.STRING,
     validate: {
     allowNull: false,
     len: [25, 200]
     },
 },
 prod_cat: {
-    type: Sequelize.STRING,
+    type: DataTypes.STRING,
     validate: {
     allowNull: false,
     len: [5, 50]
     },
 },
 prod_price: {
-    type: Sequelize.INTEGER,
+    type: DataTypes.INTEGER,
     validate: {
     allowNull: false,
     isDecimal: true,
@@ -31,7 +31,7 @@ prod_price: {
     },
 },
 prod_trade: {
-    type: Sequelize.BOOLEAN,
+    type: DataTypes.BOOLEAN,
     validate: {
     isAlpha: true,
     allowNull: false
