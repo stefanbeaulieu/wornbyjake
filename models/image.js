@@ -52,3 +52,29 @@ image_name_3: {
 
   });
 };
+
+sequelize.sync({
+	force: true,
+	logging: console.log
+
+}).then(function () {
+	console.log('Everything is synced');
+	
+	//Give any image name here.
+	var imageData = FS.readFileSync(__dirname + '/123_icon.png');
+
+	Image_Store.create({
+		image_id: 123,
+		image_type: 'png',
+		image: imageData,
+		image_size: 3,
+		image_name: 'FileName'
+	}).then(function (image_store) {
+		try {
+			//console.log(image_store.image)
+			FS.writeFileSync(__dirname + '/target.png', image_store.image);
+		} catch (e) {
+			console.log(e+'');
+		}
+	});
+});
