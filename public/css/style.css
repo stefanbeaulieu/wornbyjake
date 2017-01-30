@@ -101,6 +101,10 @@ a:hover {
     color: #7ebbff;
 }
 
+.a-signup {
+	text-decoration: none;
+    color: #d69b5e;
+}
 
 /************************************
 BODY SECTION
@@ -421,4 +425,18 @@ footer {
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	padding-top: 15px;
+}
+
+.panel-info>.panel-heading {
+	color: #d69b5e;
+    background-color: #303538;
+    border-color: #303538;
+}
+
+.panel-info {
+    border-color: #303538;
+}
+
+.form-control {
+	color: #000000;
 }
