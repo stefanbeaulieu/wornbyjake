@@ -71,10 +71,8 @@
 	margin-top: 25px;
 }
 
-.container {
-	padding-left: 0px;
-	padding-right: 0px;
-	max-width: 100%;
+.nav-tabs {
+	width: 13%;
 }
 
 /*********************************************
