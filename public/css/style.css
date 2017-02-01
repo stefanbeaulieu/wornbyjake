@@ -2,9 +2,13 @@
 HEADER SECTION
 ************************************/
 
+body {
+    overflow-x: hidden;
+}
+
 .navbar {
     background-color: #303538;
-    min-height: 60px;
+    min-height: 90px;
     margin-bottom: 0px;
     width: 100%;
     border: none;
@@ -22,7 +26,6 @@ HEADER SECTION
 
 .navbar-form .input-group>.form-control {
     width: 250px;
-    margin-top: 4px;
 }
 
 .logo {
@@ -106,6 +109,10 @@ a:hover {
     color: #d69b5e;
 }
 
+.button2 {
+    width: 100px;
+}
+
 /************************************
 BODY SECTION
 ************************************/
@@ -122,6 +129,15 @@ footer {
 	padding: 15px;
 	color: #ffffff;
 
+}
+
+.slider2 {
+    width: 1400px;
+}
+
+.slider3 {
+    text-align: center;
+    margin: auto;
 }
 
 .footer-links {
