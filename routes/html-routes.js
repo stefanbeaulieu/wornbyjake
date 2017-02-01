@@ -29,10 +29,10 @@ module.exports = function(app) {
 
   // authors route loads page4.html (route will need to be renamed)
   app.get("/cart", function(req, res) {
-    res.sendFile(path.join(__dirname + "/../public/cart.html"));
+    res.sendFile(path.join(__dirname + "/../views/cart.html"));
   });
-  
-// Sets a default page 
+
+// Sets a default page
   app.use("/", function(req, res) {
     res.sendFile(path.join(__dirname + "/../views/test.html"));
   });
