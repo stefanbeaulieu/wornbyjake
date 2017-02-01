@@ -17,7 +17,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname + "/../views/test.html"));
   });
 
-  // cms route loads page2.html (route will need to be renamed)
+  // cms route loads login.html
   app.get("/login", function(req, res) {
     res.sendFile(path.join(__dirname + "/../public/login.html"));
   });
