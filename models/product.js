@@ -38,4 +38,5 @@ prod_trade: {
     }
 }
   });
+  return Product;
 };

@@ -14,22 +14,27 @@ module.exports = function(app) {
 
   // index route loads home.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname + "/../views/home.html"));
+    res.sendFile(path.join(__dirname + "/../views/test.html"));
   });
 
   // cms route loads page2.html (route will need to be renamed)
-  app.get("/cms", function(req, res) {
-    res.sendFile(path.join(__dirname + "/../public/cms.html"));
+  app.get("/login", function(req, res) {
+    res.sendFile(path.join(__dirname + "/../public/login.html"));
   });
 
   // blog route loads page3.html (route will need to be renamed)
-  app.get("/blog", function(req, res) {
-    res.sendFile(path.join(__dirname + "/../public/blog.html"));
+  app.get("/search", function(req, res) {
+    res.sendFile(path.join(__dirname + "/../public/search.html"));
   });
 
   // authors route loads page4.html (route will need to be renamed)
-  app.get("/authors", function(req, res) {
-    res.sendFile(path.join(__dirname + "/../public/author-manager.html"));
+  app.get("/cart", function(req, res) {
+    res.sendFile(path.join(__dirname + "/../public/cart.html"));
+  });
+  
+// Sets a default page 
+  app.use("/", function(req, res) {
+    res.sendFile(path.join(__dirname + "/../views/test.html"));
   });
 
 };
