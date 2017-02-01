@@ -29,13 +29,11 @@ var db = require("../models");
    });
  
    // POST route for saving a new post
-   app.post("/api/users", function(req, res) {
-     console.log(req.body);
-     db.User.create(req.body).then(function(dbUser) {
-       
-       
-     });
-   });
+  app.post("/api/users", function(req, res) {
+    db.Product.create(req.body).then(function(dbUser) {
+      res.json(dbUser);
+    });
+  });
 
    // DELETE route for deleting posts
    app.delete("/api/users/:id", function(req, res) {

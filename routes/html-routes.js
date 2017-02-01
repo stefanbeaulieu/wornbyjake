@@ -19,12 +19,12 @@ module.exports = function(app) {
 
   // cms route loads login.html
   app.get("/login", function(req, res) {
-    res.sendFile(path.join(__dirname + "/../public/login.html"));
+    res.sendFile(path.join(__dirname + "/../views/login.html"));
   });
 
   // blog route loads page3.html (route will need to be renamed)
   app.get("/search", function(req, res) {
-    res.sendFile(path.join(__dirname + "/../public/search.html"));
+    res.sendFile(path.join(__dirname + "../../views/search.html"));
   });
 
   // authors route loads page4.html (route will need to be renamed)
