@@ -3,13 +3,13 @@ $(document).ready(function() {
   var nameInput = $("#product_name");
   var descriptionInput = $('#product_desc');
   var priceInput = $('#product_price');
-  var tradeInput = $('#company');
+  var image = $('#image1');
   
 
-  var userContainer = $(".user-container");
+  var userContainer = $(".product-container");
   // Adding event listeners to the form to create a new object, and the button to delete
   // an User
-  $(document).on("click", "#btn-signup", handleUserFormSubmit);
+  $(document).on("click", "#btn-addproduct", handleUserFormSubmit);
 
   // Getting the intiial list of Users
 
@@ -21,21 +21,21 @@ $(document).ready(function() {
       return;
     }
     // Calling the upsertUser function and passing in the value of the name input
-    upsertUser({
+    insertProduct({
       prod_name: nameInput.val().trim(),
       prod_desc: descriptionInput.val().trim(),
-      prod_cat: categoryInput.val().trim(),
+      // prod_cat: categoryInput.val().trim(),
       prod_price: priceInput.val().trim(),
-      prod_trade: tradeInput.val().trim(),
+      prod_image: image.val().trim(),
         
     });
   }
 
   // A function for creating an user. Calls getUsers upon completion
-  function upsertUser(userData) {
+  function insertProduct(userData) {
   $.ajax({
    type: 'POST',
-   url: '/api/users',
+   url: '/api/products',
    data: JSON.stringify(userData), 
    success: function(data) { alert('data: ' + data); },
    contentType: "application/json",
@@ -45,7 +45,7 @@ $(document).ready(function() {
   }
 
   function getTodos() {
-    $.get("/api/users", function(data) {
+    $.get("/api/products", function(data) {
       console.log("Todos", data);
       todos = data;
       initializeRows();

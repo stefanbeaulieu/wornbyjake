@@ -32,4 +32,8 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname + "/../views/cart.html"));
   });
 
+  // authors route loads page5.html (route will need to be renamed)
+  app.get("/addproduct", function(req,res){
+    res.sendFile(path.join(__dirname + "/../views/addproduct.html"));
+  });
 }
