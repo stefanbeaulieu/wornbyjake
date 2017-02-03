@@ -13,11 +13,7 @@ $(document).ready(function() {
   // Adding event listeners to the form to create a new object, and the button to delete
   // an User
   $(document).on("click", "#btn-signup", handleUserFormSubmit);
-<<<<<<< HEAD
-=======
 
-  // Getting the intiial list of Users
->>>>>>> 639979cac4fec3db0daead7011758a131058b16f
 
   // A function to handle what happens when the form is submitted to create a new User
   function handleUserFormSubmit(event) {
@@ -27,7 +23,7 @@ $(document).ready(function() {
       return;
     }
     // Calling the upsertUser function and passing in the value of the name input
-    upsertUser({s
+    upsertUser({
       name: nameInput.val().trim(),
       username: usernameInput.val().trim(),
       email: emailInput.val().trim(),
@@ -41,13 +37,6 @@ $(document).ready(function() {
 
   // A function for creating an user. Calls getUsers upon completion
   function upsertUser(userData) {
-<<<<<<< HEAD
-    $.post("/api/users", userData)
-  
-  }
-
-}
-=======
   $.ajax({
    type: 'POST',
    url: '/api/users',
@@ -71,5 +60,3 @@ $(document).ready(function() {
 
 
 });
-
->>>>>>> 639979cac4fec3db0daead7011758a131058b16f
