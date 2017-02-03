@@ -1,12 +1,9 @@
 $(document).ready(function() {
   // Getting references to the name inout and user container, as well as the table body
-  var nameInput = $("#name");
-  var usernameInput = $('#username');
-  var emailInput = $('#email');
-  var passInput = $('#password');
-  var companyInput = $('#company');
-  var phoneInput = $('#phone');
-  var descInput = $('#description')
+  var nameInput = $("#product_name");
+  var descriptionInput = $('#product_desc');
+  var priceInput = $('#product_price');
+  var tradeInput = $('#company');
   
 
   var userContainer = $(".user-container");
@@ -25,13 +22,11 @@ $(document).ready(function() {
     }
     // Calling the upsertUser function and passing in the value of the name input
     upsertUser({
-      name: nameInput.val().trim(),
-      username: usernameInput.val().trim(),
-      email: emailInput.val().trim(),
-      password: passInput.val().trim(),
-      company_name: companyInput.val().trim(),
-      phone_number: phoneInput.val().trim(),
-      profile_desc: descInput.val().trim()
+      prod_name: nameInput.val().trim(),
+      prod_desc: descriptionInput.val().trim(),
+      prod_cat: categoryInput.val().trim(),
+      prod_price: priceInput.val().trim(),
+      prod_trade: tradeInput.val().trim(),
         
     });
   }

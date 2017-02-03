@@ -5,7 +5,9 @@ var db = require("../models");
  
   // GET route for getting all of the posts
    app.get("/api/users", function(req, res) {
-res.json("{'hello'}")
+db.User.findAll({}).then (function(users) {
+res.json(users)
+      }); 
    });
  
   // Get rotue for retrieving a single post
