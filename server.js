@@ -3,6 +3,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var sequelize = require("sequelize");
+var documents = require('./routes/documents');
 
 
 // Sets up the Express App
@@ -27,6 +28,7 @@ app.use(express.static("./public"));
 require("./routes/html-routes.js")(app);
 require("./routes/users-api-routes.js")(app);
 require("./routes/products-api-routes.js")(app);
+app.use('/documents', documents);
 
 // Syncing our sequelize models and then starting our express app
 db.sequelize.sync({}).then(function() {
