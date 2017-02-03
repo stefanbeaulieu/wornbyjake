@@ -32,9 +32,4 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname + "/../views/cart.html"));
   });
 
-// Sets a default page
-  app.use("/", function(req, res) {
-    res.sendFile(path.join(__dirname + "/../views/test.html"));
-  });
-
-};
+}
