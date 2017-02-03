@@ -13,10 +13,8 @@ $(document).ready(function() {
   // Adding event listeners to the form to create a new object, and the button to delete
   // an User
   $(document).on("click", "#btn-signup", handleUserFormSubmit);
-  $(document).on("click", ".delete-user", handleDeleteButtonPress);
 
   // Getting the intiial list of Users
-  getUsers();
 
   // A function to handle what happens when the form is submitted to create a new User
   function handleUserFormSubmit(event) {
@@ -40,30 +38,21 @@ $(document).ready(function() {
 
   // A function for creating an user. Calls getUsers upon completion
   function upsertUser(userData) {
-    $.post("/api/users", userData)
-      .then(getUsers);
-  }
-
-
-
-
-
-  // Function for handling what to render when there are no users
-  function renderEmpty() {
-    var alertDiv = $("<div>");
-    alertDiv.addClass("alert alert-danger");
-    alertDiv.html("You must create an User before you can create a Post.");
-    userContainer.append(alertDiv);
-  }
-
-  // Function for handling what happens when the delete button is pressed
-  function handleDeleteButtonPress() {
-    var listItemData = $(this).parent("td").parent("tr").data("user");
-    var id = listItemData.id;
-    $.ajax({
-      method: "DELETE",
-      url: "/api/users/" + id
-    })
-    .done(getUsers);
-  }
+  $.ajax({
+   type: 'POST',
+   url: '/api/users',
+   data: JSON.stringify(userData), 
+   success: function(data) { alert('data: ' + data); },
+   contentType: "application/json",
+   dataType: 'json'
 });
+      
+  }
+
+
+
+
+
+
+});
+

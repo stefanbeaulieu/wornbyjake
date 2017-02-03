@@ -5,15 +5,7 @@ var db = require("../models");
  
   // GET route for getting all of the posts
    app.get("/api/users", function(req, res) {
-     var query = {};
-    if (req.query.user_id) {
-       query.UserId = req.query.user_id;
-     }
-     db.User.findAll({
-       where: query
-     }).then(function(dbUser) {
-       res.json(dbUser);
-     });
+res.json("{'hello'}")
    });
  
   // Get rotue for retrieving a single post
@@ -30,8 +22,9 @@ var db = require("../models");
  
    // POST route for saving a new post
   app.post("/api/users", function(req, res) {
-    db.Product.create(req.body).then(function(dbUser) {
-      res.json(dbUser);
+    console.log("yea")
+    db.User.create(req.body).then(function(dbUser) {
+      res.json("true"); 
     });
   });
 
