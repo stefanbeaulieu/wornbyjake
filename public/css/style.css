@@ -77,6 +77,10 @@ ul {
     padding: 0;
 }
 
+.carousel-indicators {
+    width: 100%;
+}
+
 
 /************************************
 LINKS
@@ -84,7 +88,6 @@ LINKS
 
 li {
     display: inline;
-    width: 100px;
     padding: 0 10px;
     color: #fff;
 }
