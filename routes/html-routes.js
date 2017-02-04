@@ -36,4 +36,19 @@ module.exports = function(app) {
   app.get("/addproduct", function(req,res){
     res.sendFile(path.join(__dirname + "/../views/addproduct.html"));
   });
+
+  // authors route loads page6.html 
+  app.get("/men", function(req, res){
+    res.sendFile(path.join(__dirname + "/../views/mens.html"));
+  });
+
+  // authors route loads page7.html
+  app.get("/women", function(req, res){
+    res.sendFile(path.join(__dirname + "../views/women.html"));
+  });
+
+  // authors route loads page8.html
+  app.get("/children", function(req, res){
+    res.sendFile(path.join(__dirname + "../views/children.html"));
+  });
 }
