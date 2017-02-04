@@ -51,4 +51,10 @@ module.exports = function(app) {
   app.get("/children", function(req, res){
     res.sendFile(path.join(__dirname + "/../views/children.html"));
   });
+
+  // authors route loads page9.html
+  app.get("/menshirt1", function(req, res){
+    res.sendFile(path.join(__dirname + "/../views/menshirt1.html"));
+  });
+
 }
