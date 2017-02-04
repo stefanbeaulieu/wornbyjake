@@ -3,6 +3,7 @@ $(document).ready(function() {
   var nameInput = $("#product_name");
   var descriptionInput = $('#product_desc');
   var priceInput = $('#product_price');
+  var category = $('#prodcat')
   var image = $('#image1');
   
 
@@ -24,7 +25,7 @@ $(document).ready(function() {
     insertProduct({
       prod_name: nameInput.val().trim(),
       prod_desc: descriptionInput.val().trim(),
-      // prod_cat: categoryInput.val().trim(),
+      prodcat: categoryInput.val().trim(),
       prod_price: priceInput.val().trim(),
       prod_image: image.val().trim(),
         
