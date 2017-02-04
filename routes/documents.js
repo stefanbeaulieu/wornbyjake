@@ -1,7 +1,7 @@
 var express = require('express');  
 var router = express.Router();
 
-var elastic = require('../elasticsearch');
+var elastic = require('elasticsearch');
 
 /* GET suggestions */
 router.get('/suggest/:input', function (req, res, next) {  
@@ -13,5 +13,5 @@ router.post('/', function (req, res, next) {
   elastic.addDocument(req.body).then(function (result) { res.json(result) });
 });
 
-module.exports = router;
+module.exports = router();
 
