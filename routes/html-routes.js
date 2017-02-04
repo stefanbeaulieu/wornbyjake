@@ -44,11 +44,11 @@ module.exports = function(app) {
 
   // authors route loads page7.html
   app.get("/women", function(req, res){
-    res.sendFile(path.join(__dirname + "../views/women.html"));
+    res.sendFile(path.join(__dirname + "/../views/women.html"));
   });
 
   // authors route loads page8.html
   app.get("/children", function(req, res){
-    res.sendFile(path.join(__dirname + "../views/children.html"));
+    res.sendFile(path.join(__dirname + "/../views/children.html"));
   });
 }
